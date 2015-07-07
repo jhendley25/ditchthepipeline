@@ -5,14 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Ditching The Pipeline | Update Ruby Meetup 6/17/2015 | by Jake Hendley @Jake_Hendley</title>
-    
+    <title>Ditching The Pipeline | Update Ruby Meetup 7/8/2015 | by Jake Hendley @Jake_Hendley</title>
+
     <meta name="description" content="Talk on ditching the Rails asset pipeline in favor of JS task runners and decoupled infrastructure" />
     <meta name="author" content="Jake Hendley" />
 
     <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet" />
-    
+
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
@@ -31,123 +31,64 @@
         <h2>@Jake_Hendley</h2>
     </div>
 
-    <div id="agenda" class="step" data-x="500" data-y="50">
-        <h3>Overview</h3>
-        <h3>Pros/Cons</h3>
-        <h3>Suggestions</h3>
-        <h3>A few resources</h3>
-    </div>
-
     <div class="cube">
         <div class="leftFace step" data-x="-125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45" data-rotate-z="0" data-scale="0.5">
-                <h1>Who is this for?</h1>
+                <h1>Common Goals</h1>
                 <ul>
-                    <li>Startups / Small Teams</li>
-                    <li>Existing Rails Projects</li>
+                    <li>Easy to maintain</li>
+                    <li>Scalable</li>
+                    <li>Fast Iteration</li>
+                    <li>Automated build/deploy</li>
+                    <li>Fun</li>
                 </ul>
         </div>
         <div class="topFace step" data-x="0" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0" data-rotate-z="45" data-scale="0.5">
-                <h1>Wait.. what? Why?</h1>
-                <p>Because JS <i>is awesome</i></p>
+                <h1>Benefits</h1>
+                <p>JS <i>is awesome</i></p>
                 <ul>
                     <li>Decoupled frontends</li>
                     <li>No more asset pipeline</li>
-                    <li>JS task runners instead</li>
+                    <li>Grunt/Gulp</li>
                 </ul>
         </div>
         <div class="rightFace step" data-x="125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0" data-scale="0.5">
                 <h1>More Benefits</h1>
+                <p>Ok Ruby is cool too</p>
                 <ul>
-                    <li>Best of both worlds</li>
-                    <li>"Scalable network programs"</li>
-                    <li>Maintained by Isaac Schlueter</li>
+                    <li>Gems (Devise)</li>
+                    <li>Rake, ActiveRecord, etc</li>
+                    <li>Heroku</li>
                 </ul>
         </div>
         <div class="backRightFace step" data-x="125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
-                <h1>Pros</h1>
+                <h1>Building</h1>
                 <ul>
-                    <li>Javascript</li>
-                    <li>Non-blocking</li>
-                    <li>Reuse JS code</li>
-                    <li>Strong community and modules!</li>
-                    <li>People will think you're a l33t hacker</li>
+                    <li>Custom CLI (the fun part)</li>
+                    <li>Semver via package.json</li>
+                    <li>Run Tests (rspec, nightwatch)</li>
+                    <li>Grunt/Gulp</li>
+                    <li>Copy config files</li>
                 </ul>
         </div>
         <div class="backLeftFace step" data-x="-125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225" data-rotate-z="0" data-scale="0.5">
-                <h1>Cons</h1>
+                <h1>Deployment</h1>
                 <ul>
-                    <li>Javascript</li>
-                    <li>CPU intensive tasks</li>
-                    <li>Event-driven learning curve</li>
-                    <li>People will think you're a hipster</li>
+                    <li>Heroku</li>
+                    <li>AWS/Cloudfront</li>
+                    <li>Worker Service (iron.io, heroku)</li>
+                    <li>CI (Werker, Travis)</li>
+                    <li>Devops (New Relic, Logentries)</li>
                 </ul>
+
         </div>
         <div class="bottomFace step" data-x="0" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180" data-rotate-z="45" data-scale="0.5">
-                <h1>Resources</h1>
+                <h1>Thanks!</h1>
                 <ul>
-                    <li><a href="http://howtonode.org/introduction-to-npm">Introduction to NPM</a></li>
-                    <li><a href="http://expressjs.com">Express.js web framework</a></li>
-                    <li><a href="https://devcenter.heroku.com/articles/nodejs">Free node hosting on Heroku</a></li>
-                    <li>Slides at introtonode.herokuapp.com</li>
-                    <li>Follow me at @le_isms</li>
+                    <li><a href="https://arkiver.com">arkiver.com</a></li>
+                    <li>@Jake_Hendley</li>
+                    <li>gofundme.com/justkidding</li>
                 </ul>
-        </div>
-    </div>
 
-    <div class="cube2">
-        <div class="topFace step" data-x="-1000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0" data-rotate-z="45" data-scale="0.5">
-                <h1>Just what is Node?</h1>
-                <p>What <i>isn't</i> Node:</p>
-                <ul>
-                    <li>a language</li>
-                    <li>a platform or service</li>
-                    <li>a framework</li>
-                </ul>
-        </div>
-        <div class="leftFace step" data-x="-1125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45" data-rotate-z="0" data-scale="0.5">
-                <h1>Ok.. what is Node?</h1>
-                <p>Node is...</p>
-                <ul>
-                    <li>a Javascript environment</li>
-                    <li>Event-driven/Non-blocking</li>
-                    <li>Pure Awesome</li>
-                </ul>
-        </div>
-        <div class="rightFace step" data-x="-875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0" data-scale="0.5">
-                <h1>Origin</h1>
-                <ul>
-                    <li>Created by Ryan Dahl</li>
-                    <li>"Scalable network programs"</li>
-                    <li>Maintained by Isaac Schlueter</li>
-                </ul>
-        </div>
-        <div class="backRightFace step" data-x="-875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
-                <h1>Pros</h1>
-                <ul>
-                    <li>Javascript</li>
-                    <li>Non-blocking</li>
-                    <li>Reuse JS code</li>
-                    <li>Strong community and modules!</li>
-                    <li>People will think you're a l33t hacker</li>
-                </ul>
-        </div>
-        <div class="backLeftFace step" data-x="-1125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225" data-rotate-z="0" data-scale="0.5">
-                <h1>Cons</h1>
-                <ul>
-                    <li>Javascript</li>
-                    <li>CPU intensive tasks</li>
-                    <li>Event-driven learning curve</li>
-                    <li>People will think you're a hipster</li>
-                </ul>
-        </div>
-        <div class="bottomFace step" data-x="-1000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180" data-rotate-z="45" data-scale="0.5">
-                <h1>Resources</h1>
-                <ul>
-                    <li><a href="http://howtonode.org/introduction-to-npm">Introduction to NPM</a></li>
-                    <li><a href="http://expressjs.com">Express.js web framework</a></li>
-                    <li><a href="https://devcenter.heroku.com/articles/nodejs">Free node hosting on Heroku</a></li>
-                    <li>Slides at ditchthepipeline.herokuapp.com</li>
-                </ul>
         </div>
     </div>
 
